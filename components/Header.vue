@@ -2,11 +2,20 @@
   <div class="header-element">
     <h2>{{ title }}</h2>
     <div @click="shiftDarkMode" class="dark-mode">
-      <span>
+      <!-- <span>
         <i v-if="darkMode" class="far fa-light fa-sun"></i>
         <i v-else class="far fa-moon"></i>
-      </span>
-      <span>Dark mode</span>
+      </span> -->
+      <input
+        @change="toggleTheme"
+        id="checkbox"
+        type="checkbox"
+        class="switch-checkbox"
+      />
+      <label for="checkbox" class="switch-label">
+        <span>🌙</span>
+        <span>🔆</span>
+      </label>
     </div>
   </div>
 </template>
@@ -45,7 +54,7 @@ export default {
 };
 </script>
 
-<style >
+<style>
 .header-element {
   display: flex;
   justify-content: space-between;

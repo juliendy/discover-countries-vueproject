@@ -39,7 +39,7 @@ export default {
   border: none;
   height: 3em;
   outline: none;
-  width: 95%;
+  width: 100%;
 }
 
 input:focus::placeholder {
@@ -93,7 +93,7 @@ input:focus::placeholder {
   }
 
   .search-container {
-    width: 60%;
+    width: 25%;
     margin-left: 2em;
   }
 
