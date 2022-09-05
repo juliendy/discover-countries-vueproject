@@ -1,6 +1,6 @@
 <template>
   <div class="header-element">
-    <h2>{{ title }} ?</h2>
+    <h2>{{ title }}</h2>
     <div @click="shiftDarkMode" class="dark-mode">
       <span>
         <i v-if="darkMode" class="far fa-light fa-sun"></i>
@@ -15,7 +15,7 @@
 export default {
   data() {
     return {
-      title: "Where in the world",
+      title: "Discover Countries!",
       darkMode: false,
     };
   },
